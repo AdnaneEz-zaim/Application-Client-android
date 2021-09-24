@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="30sp"
+    tools:ignore="MissingConstraints">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/promoIMG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/promo_holder"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="5dp"
+        app:riv_border_width="2dp"
+        app:riv_border_color="#333333"
+        />
+
+</RelativeLayout>

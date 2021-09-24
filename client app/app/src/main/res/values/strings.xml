@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Client</string>
+    <string name="title_activity_demande">demande</string>
+    <string name="tab_text_1">Demandes</string>
+    <string name="tab_text_2">Réservations</string>
+    <string name="dec"><u>déconnecter</u></string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiaWxpYXNzLWRhaG1hbiIsImEiOiJjazhpdzg5NXMwMHd1M2xtY284eXpvd3RpIn0.tRDcxyzIszhlBKdfozMISg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment1</string>
+    <string name="hello_blank_fragment2">Hello blank fragment2</string>
+    <string name="title_activity_demande_client">DemandeClient</string>
+    <string-array name="categProd">
+        <item>Selectionner</item>
+        <item>Produits par Kg</item>
+        <item>Produits par l</item>
+        <item>Produits par unité</item>
+    </string-array>
+    <string-array name="quantite">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chosingQuantiteForDemande">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_welcome"
+        android:scaleType="fitXY"
+        />
+    <Button
+        android:onClick="espaceClient"
+        android:layout_width="30sp"
+        android:layout_height="35sp"
+        android:background="@drawable/icone_back"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:background="@drawable/details_shape"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            android:layout_gravity="center_horizontal"
+            android:background="#3fbcef"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/itemImg"
+                android:layout_width="match_parent"
+                android:layout_height="260sp"
+                android:background="@color/mapbox_plugins_green"
+                android:padding="2sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cherry" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/prodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:maxWidth="140sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10sp"
+                    android:singleLine="true"
+                    android:text="nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/oldPrix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="155"
+                        android:textSize="17sp"
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:id="@+id/oldPrixDH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" DH"
+                        android:textSize="17sp"
+                        android:textColor="@android:color/black" />
+                    <LinearLayout
+                        android:id="@+id/promoLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="5sp"
+                        >
+
+                        <TextView
+                            android:id="@+id/prix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="155"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_dark" />
+
+                        <TextView
+                            android:id="@+id/DH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" DH"
+                            android:textSize="17sp"
+                            android:textColor="@android:color/holo_red_dark" />
+                        <TextView
+                            android:id="@+id/percent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" -5%"
+                            android:background="@android:color/holo_red_dark"
+                            android:textColor="@android:color/white"
+                            android:layout_marginLeft="5sp"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10sp"
+                android:text="Quantité: "
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/quant"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/unity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:text="KG"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/iconfinder_tick_success_done_valid_5402431"
+            android:onClick="espaceClient" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/promoIcon"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:src="@drawable/promo_icon"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

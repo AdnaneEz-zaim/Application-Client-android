@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_welcome"
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="la creation de compte client"
+                android:textColor="#cc0009"
+                android:textSize="20sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginLeft="12sp"
+
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lfname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20sp">
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:textSize="16sp"
+                    android:drawablePadding="5sp"
+                    android:layout_marginHorizontal="15sp"
+                    android:drawableLeft="@drawable/per_nom"
+                    android:hint="votre pernom"
+                    android:textColor="@android:color/black"
+                    android:paddingHorizontal="15sp"
+                    android:singleLine="true"
+                    android:background="@drawable/input_shape"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/llname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5sp">
+                <EditText
+                    android:id="@+id/lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:textSize="16sp"
+                    android:drawablePadding="5sp"
+                    android:drawableLeft="@drawable/per_nom"
+                    android:paddingHorizontal="15sp"
+                    android:textColor="@android:color/black"
+                    android:hint="votre nom"
+                    android:layout_marginHorizontal="15sp"
+                    android:singleLine="true"
+                    android:background="@drawable/input_shape"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ladrr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5sp">
+                <EditText
+                    android:id="@+id/adrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:textSize="16sp"
+                    android:drawablePadding="5sp"
+                    android:layout_marginHorizontal="15sp"
+                    android:drawableLeft="@drawable/adresse"
+                    android:hint="votre adresse"
+                    android:textColor="@android:color/black"
+                    android:paddingHorizontal="15sp"
+                    android:singleLine="true"
+                    android:background="@drawable/input_shape"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5sp">
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:textSize="16sp"
+                    android:drawablePadding="5sp"
+                    android:layout_marginHorizontal="15sp"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="votre adesse email"
+                    android:textColor="@android:color/black"
+                    android:paddingHorizontal="15sp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/input_shape"
+                    android:singleLine="true"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ltele"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5sp">
+                <EditText
+
+                    android:id="@+id/tele"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:textSize="16sp"
+                    android:drawablePadding="5sp"
+                    android:layout_marginHorizontal="15sp"
+                    android:drawableLeft="@drawable/tele"
+                    android:hint="votre numero de telephone"
+                    android:textColor="@android:color/black"
+                    android:paddingHorizontal="15sp"
+                    android:background="@drawable/input_shape"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lpass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5sp">
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:textSize="16sp"
+                    android:drawablePadding="5sp"
+                    android:drawableLeft="@drawable/round_lock_black_18dp"
+                    android:paddingHorizontal="15sp"
+                    android:textColor="@android:color/black"
+                    android:hint="votre mot de pass"
+                    android:layout_marginHorizontal="15sp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:background="@drawable/input_shape"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lconf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5sp">
+                <EditText
+                    android:id="@+id/conf"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:textSize="16sp"
+                    android:drawablePadding="5sp"
+                    android:drawableLeft="@drawable/round_lock_black_18dp"
+                    android:paddingHorizontal="15sp"
+                    android:textColor="@android:color/black"
+                    android:hint="confirmez votre mot de pass"
+                    android:layout_marginHorizontal="15sp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:background="@drawable/input_shape"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:layout_marginHorizontal="80sp"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/button_shape"
+                android:text="crèer compte"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

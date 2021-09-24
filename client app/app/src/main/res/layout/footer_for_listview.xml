@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/ajouterDemande"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/add_shape"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="50sp"
+        android:text="ajouter une demande"
+        />
+
+</RelativeLayout>

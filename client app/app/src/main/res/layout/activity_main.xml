@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/loging" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            >
+
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:layout_gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_shape"
+                android:orientation="vertical"
+                android:layout_marginBottom="40sp"
+                android:layout_marginTop="20sp"
+                >
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/logmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginHorizontal="15sp"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="votre email"
+                    android:drawablePadding="10sp"
+                    android:textColor="@android:color/black"
+                    android:paddingHorizontal="15sp"
+                    android:layout_marginTop="15sp"
+                    android:singleLine="true"
+                    android:background="@drawable/input_shape"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/logpass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:drawableLeft="@drawable/key"
+                    android:drawablePadding="10sp"
+                    android:paddingHorizontal="15sp"
+                    android:textColor="@android:color/black"
+                    android:hint="votre mot de pass"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginTop="10sp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:background="@drawable/input_shape"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/connexion"
+                    android:onClick="espaceClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/button_shape"
+                    android:text="connexion"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:textSize="22sp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="130sp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10sp"
+                        android:background="#7a212a"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5sp"
+                        android:text="OR"
+                        android:textSize="20sp"/>
+                    <View
+                        android:layout_width="130sp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10sp"
+                        android:background="#7a212a"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/newAccountButton"
+                    android:onClick="newAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginHorizontal="30sp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/new_account_shape"
+                    android:text="créer un compte"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:textSize="22sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

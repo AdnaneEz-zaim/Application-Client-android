@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Demande">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="180sp"
+        android:src="@drawable/adaptedchange"
+        android:scaleType="fitXY"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d4d4d4"
+            android:layout_marginTop="180sp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:background="#d4d4d4"
+                app:tabTextColor="@android:color/black"
+                app:tabSelectedTextColor="#000099"
+                android:paddingTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabItem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxxx"/>
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yyyy"/>
+            </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:background="#d4d4d4"
+            android:layout_marginTop="238sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:padding="5sp"
+                android:background="@drawable/photo_"
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="25sp"
+                tools:ignore="PrivateResource"
+                />
+
+            <ImageButton
+                android:id="@+id/img_plus"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignBottom="@id/img_profile"
+                android:layout_marginBottom="-5dp"
+                android:src="@drawable/ic_plus"
+                android:layout_alignRight="@id/img_profile"
+                android:background="@drawable/photo_"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginBottom="20sp"
+            android:textColor="@android:color/black"
+            android:text="xxxx.xxxx@gmail.com"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/front"
+            android:onClick="showDetails"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:background="@drawable/info_shape"
+            android:layout_marginHorizontal="60sp"
+            android:text="Afficher plus"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="452sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

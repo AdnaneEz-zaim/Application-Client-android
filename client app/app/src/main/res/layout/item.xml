@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="140sp"
+        android:orientation="vertical"
+        android:background="#3fbcef"
+        >
+        <ImageView
+            android:id="@+id/itemImg"
+            android:padding="2sp"
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cherry"
+            android:background="@color/mapbox_plugins_green"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/prodName"
+                android:layout_marginLeft="5sp"
+                android:text="name"
+                android:textSize="11sp"
+                android:textColor="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="5sp"
+                android:layout_alignParentRight="true"
+                >
+                <TextView
+                android:id="@+id/prix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="155"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/DH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" DH"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
